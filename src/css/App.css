@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.component-container {
+  margin: 0 3rem;
+}
+
+.fruit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fruit-counter {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.fruit-counter > * {
+  margin: 0.5rem;
+}
+.fruit-counter .img {
+  font-size: 2em;
+}
+.fruit-counter .counter-btn {
+  width: 25px;
+  height: 25px;
+  background: #333;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+}
+
+form {
+  padding: 1em;
+  text-align: left;
+  min-width: 450px;
+}
+form input {
+  margin: 0.5em 0;
+}
+form input[type=text], form input[type=number] {
+  display: block;
+  width: 100%;
+  height: 1.5em;
+}
+form input[type=radio] {
+  margin-right: 1em;
+}
+form input[type=checkbox] {
+  display: inline-block;
+  margin-left: 2em;
+}
+form label {
+  display: inline-block;
+}
+form label[for=terms] {
+  margin-top: 2em;
+}
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+}
+form span,
+form p {
+  color: #bf1650;
+}
+form span::before,
+form p::before {
+  content: "⚠️";
+  margin: 0 1px;
+}
+form span {
+  float: right;
+  transform: translateY(-6px);
+}
+
+form button,
+.reset-btn {
+  height: 50px;
+  width: 200px;
+  display: block;
+  padding: 1em 3em;
+  margin: 1em 0;
+  border: 0;
+  background: #333;
+  color: white;
+  border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 250ms ease;
+}
+form button:hover, form button:focus,
+.reset-btn:hover,
+.reset-btn:focus {
+  background: #e41b61;
+}/*# sourceMappingURL=App.css.map */
